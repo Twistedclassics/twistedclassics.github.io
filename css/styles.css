@@ -129,3 +129,37 @@ footer {
   text-align: center;
   padding: 10px 0;
 }
+/* Ensure the menu is responsive and centered */
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px 5px;
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+  }
+}
