@@ -1,119 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Twisted Classics - Restoring the Glory of Classic Cars with Precision and Care">
-  <meta name="keywords" content="Classic Car Restoration, Modern Car Repair, Auto Bodywork, Vehicle Services">
-  <meta name="author" content="Twisted Classics">
-  <title>Twisted Classics</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
 
-<!-- Header -->
-<header>
-  <div class="container nav-container">
-    <img src="images/twisted-classics-logo.png" alt="Twisted Classics Logo" class="logo">
-    <nav aria-label="Main Navigation">
-      <ul>
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About Us</a></li>
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#gallery" class="nav-link">Gallery</a></li>
-        <li><a href="#contact" class="nav-link">Contact Us</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+/* Header */
+header {
+  background: #222;
+  color: #fff;
+  padding: 10px 0;
+}
 
-<!-- Hero Section -->
-<section id="home" class="section hero">
-  <div class="container">
-    <h1>Welcome to Twisted Classics</h1>
-    <p>
-    <p>  
-    <p> We bring timeless automobiles back to life with unparalleled attention to detail and a passion for craftsmanship. At Twisted Classics, every vehicle tells a story, and we are here to ensure that story continues for generations to come. </p>
-    <p> </p>
-    <p> </p>
-    <p> Our expertise in classic car restoration ensures your treasured vehicles retain their original charm while incorporating modern performance and reliability. From intricate frame-off restorations to custom paintwork that breathes new life into vintage designs, we deliver results that exceed expectations. </p>
-    <p> </p>
-    <p> </p>
-    <p> Whether you’re a proud owner of a rare vintage beauty or seeking expert care for your modern vehicle, our team of skilled professionals combines tradition and innovation to keep your ride in peak condition. No project is too big or too small—we treat every vehicle as if it were our own. Driven by passion and powered by precision, Twisted Classics is your trusted partner in automotive excellence. Join us as we preserve the legacy of classic cars and redefine what it means to drive history forward.</p>
-    <p> </p>
-    <p> </p>
-    <p> Our expertise in classic car restoration ensures your vehicle retains its original charm while incorporating modern performance standards.</p>
-  </div>
-</section>
+header .logo {
+  height: 80px;
+}
 
-<!-- About Us Section -->
-<section id="about" class="section" style="background-color: #f9f9f9;">
-  <div class="container">
-    <h2>About Us</h2>
-    <p>Twisted Classics was founded out of a passion for preserving the legacy of classic cars while providing top-notch services for modern vehicles. With decades of combined experience, our team of automotive experts specializes in everything from meticulous restorations to routine maintenance.</p>
-  </div>
-</section>
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
 
-<!-- Services Section -->
-<section id="services" class="section">
-  <div class="container">
-    <h2>Our Services</h2>
-    <h3>Classic Car Restoration</h3>
-    <ul>
-      <li><i class="fas fa-car"></i> Complete frame-off restorations</li>
-      <li><i class="fas fa-cogs"></i> Engine and transmission rebuilds</li>
-      <li><i class="fas fa-chair"></i> Interior restoration</li>
-      <li><i class="fas fa-paint-brush"></i> Custom paint jobs</li>
-    </ul>
-    <h3>Modern Vehicle Repairs</h3>
-    <ul>
-      <li><i class="fas fa-tools"></i> General auto repairs</li>
-      <li><i class="fas fa-laptop-code"></i> Diagnostics and tune-ups</li>
-      <li><i class="fas fa-car-battery"></i> Brake and suspension services</li>
-      <li><i class="fas fa-wrench"></i> Bodywork and dent repair</li>
-    </ul>
-  </div>
-</section>
+header nav ul li {
+  margin: 0 15px;
+}
 
-<!-- Gallery Section -->
-<section id="gallery" class="section" style="background-color: #efefef;">
-  <div class="container">
-    <h2>Gallery</h2>
-    <div class="gallery-images">
-      <img src="images/classic-car1.jpg" alt="Restored Classic Car">
-      <img src="images/classic-car2.jpg" alt="Vintage Car Restoration">
-      <img src="images/modern-repair.jpg" alt="Modern Car Repair">
-      <img src="images/engine-rebuild.jpg" alt="Engine Rebuild">
-    </div>
-  </div>
-</section>
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
-<!-- Contact Us Section -->
-<section id="contact" class="section">
-  <div class="container">
-    <h2>Contact Us</h2>
-    <div class="contact-info">
-      <ul>
-        <li><i class="fas fa-phone"></i> <a href="tel:1234567890">123-456-7890</a></li>
-        <li><i class="fas fa-envelope"></i> <a href="mailto:info@twistedclassics.com">info@twistedclassics.com</a></li>
-        <li><i class="fas fa-map-marker-alt"></i> 123 Classic Drive, Motor City</li>
-      </ul>
-    </div>
-    <div class="social-links">
-      <p>Follow us on:</p>
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-    </div>
-  </div>
-</section>
+header nav ul li a:hover {
+  color: #e63946;
+}
 
-<!-- Footer -->
-<footer>
-  <p>© 2025 Twisted Classics | Restoring Vintage Beauty with Modern Precision</p>
-</footer>
+/* Hero Section */
+.hero {
+  background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
 
-</body>
-</html>
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Section Styling */
+.section {
+  padding: 40px 20px;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.section p {
+  text-align: center;
+}
+
+/* Gallery Section */
+.gallery-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-images img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 3px solid #e63946;
+  border-radius: 5px;
+}
+
+/* Contact Section */
+.contact-info ul {
+  list-style: none;
+  text-align: center;
+}
+
+.contact-info ul li {
+  margin-bottom: 10px;
+}
+
+.contact-info ul li a {
+  color: #e63946;
+  text-decoration: none;
+}
+
+.social-links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: #333;
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+
+.social-links a:hover {
+  color: #e63946;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
