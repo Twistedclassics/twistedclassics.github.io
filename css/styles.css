@@ -6,44 +6,46 @@ body {
   line-height: 1.8;
   color: #333;
 }
+
 /* Header */
 header {
- background: #222;
- color: #fff;
- padding: 10px 0;
+  background: #222; /* Original background color retained */
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align logo and menu evenly */
 }
 
 header .logo {
- height: 80px;
+  max-height: 185px; /* Increased logo size */
+  object-fit: contain;
+  margin: 0;
 }
 
 header nav ul {
- list-style: none;
- display: flex;
- justify-content: center;
- padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px; /* Added spacing between menu items */
+  justify-content: flex-end; /* Align navigation to the right */
 }
 
 header nav ul li {
- margin: 0 15px;
+  margin: 0 15px;
 }
 
 header nav ul li a {
- color: #fff;
- text-decoration: none;
- font-weight: bold;
- text-transform: uppercase;
+  color: #fff; /* Original text color retained */
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out;
 }
 
 header nav ul li a:hover {
- color: #e63946;
-}
-
-
-header .logo {
-  margin: 0;
-  max-height: 185px;
-  object-fit: contain;
+  color: #e63946; /* Original hover color retained */
 }
 
 /* Hero Section */
@@ -56,6 +58,7 @@ header .logo {
 
 .hero h1 {
   font-size: 2.5rem;
+  color: #fff;
 }
 
 .hero p {
@@ -70,7 +73,7 @@ header .logo {
 .section h2 {
   text-align: center;
   margin-bottom: 20px;
-  color: #222;
+  color: #fff;
 }
 
 .section p {
@@ -113,7 +116,7 @@ header .logo {
 }
 
 .social-links a {
-  color: #333;
+  color: #fff;
   margin: 0 10px;
   font-size: 1.5rem;
 }
@@ -129,37 +132,29 @@ footer {
   text-align: center;
   padding: 10px 0;
 }
-/* Ensure the menu is responsive and centered */
-header nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
-  padding: 0;
-  margin: 0;
-}
 
-header nav ul li {
-  margin: 0 15px;
-}
-
-header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  display: inline-block;
-  padding: 10px 5px;
-}
-
-/* Add responsiveness for smaller screens */
+/* Responsive Design */
 @media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack logo and nav vertically */
+    text-align: center;
+  }
+
+  header .logo {
+    max-height: 250px; /* Increased logo size for better visibility */
+    margin-bottom: 15px;
+  }
+
   header nav ul {
-    flex-direction: column; /* Stack items vertically on smaller screens */
+    flex-direction: column; /* Stack navigation vertically */
+    gap: 10px; /* Spaced menu items */
   }
 
   header nav ul li {
     margin: 10px 0;
+  }
+
+  header nav ul li a {
+    font-size: 1.1rem; /* Slightly larger font for readability */
   }
 }
